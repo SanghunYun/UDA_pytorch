@@ -5,6 +5,8 @@ Model  | UDA official | This repository
 -- | -- | --
 UDA (X) | 68% |  
 UDA (O) | 90% | 88.45%
+
+
 ![](README_data/2019-08-30-22-18-28.png)
 
 
