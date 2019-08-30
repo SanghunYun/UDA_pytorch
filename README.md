@@ -52,13 +52,12 @@ The KL-divergence loss(ori, aug) is too small to just use. It can cause that the
 
 ## Pre-works
 
-#### - Download pre-trained BERT model
-First, you have to download pre-trained BERT_base from Google's BERT repository.
+#### - Download pre-trained BERT model and unzip IMDb data
+First, you have to download pre-trained BERT_base from Google's BERT repository. And unzip IMDb data
 
-    bash download_BERT_Base_Uncased.sh
-After running, you can get the pre-trained BERT_base_Uncased model at **/BERT_Base_Uncased** directory.
+    bash download.sh
+After running, you can get the pre-trained BERT_base_Uncased model at **/BERT_Base_Uncased** director and **/data**
 
-#### - Data
 I use already pre-processed and augmented IMDb data extract from official [UDA](https://github.com/google-research/uda). If you want to use your raw data, change need_prepro = True.
 
 ## Example usage
