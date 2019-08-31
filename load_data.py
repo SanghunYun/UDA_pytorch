@@ -3,7 +3,7 @@
 # 
 # This file has been modified by SanghunYun, Korea Univeristy.
 # Little modification at Tokenizing, AddSpecialTokensWithTruncation, TokenIndexing
-# and CsvDataset, load_data, BLOG has been newly written.
+# and CsvDataset, load_data has been newly written.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
