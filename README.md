@@ -1,11 +1,12 @@
 # UDA(Unsupervised Data Augmentation) with BERT
-This is re-implementation of Google's UDA [[paper]](https://arxiv.org/abs/1904.12848)[[tensorflow]](https://github.com/google-research/uda) in pytorch through with Kakao Brain's Pytorchic BERT[[pytorch]](https://github.com/dhlee347/pytorchic-bert).
+This is re-implementation of Google's UDA [[paper]](https://arxiv.org/abs/1904.12848)[[tensorflow]](https://github.com/google-research/uda) in pytorch with Kakao Brain's Pytorchic BERT[[pytorch]](https://github.com/dhlee347/pytorchic-bert).
 
 Model  | UDA official | This repository
 -- | -- | --
 UDA (X) | 68% |  
 UDA (O) | 90% | 88.45%
 
+(Max sequence length = 128, Train batch size = 8)
 
 ![](README_data/2019-08-30-22-18-28.png)
 
