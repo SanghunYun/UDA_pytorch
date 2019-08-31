@@ -59,7 +59,7 @@ First, you have to download pre-trained BERT_base from Google's BERT repository.
     bash download.sh
 After running, you can get the pre-trained BERT_base_Uncased model at **/BERT_Base_Uncased** director and **/data**
 
-I use already pre-processed and augmented IMDb data extract from official [UDA](https://github.com/google-research/uda). If you want to use your raw data, change need_prepro = True.
+I use already pre-processed and augmented IMDb data extracted from official [UDA](https://github.com/google-research/uda). If you want to use your raw data, change need_prepro = True.
 
 ## Example usage
 This project are broadly divided into two parts(Fine-tuning, Evaluation).<br/>
