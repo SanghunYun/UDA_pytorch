@@ -71,20 +71,20 @@ This project are broadly divided into two parts(Fine-tuning, Evaluation).<br/>
 
             python main.py \
                 --cfg='config/non-uda.json' \
-                --model_cfg='config/bert_muling.json'
+                --model_cfg='config/bert_base.json'
 
     - UDA fine-tuning
 
             python main.py \
                 --cfg='config/uda.json' \
-                --model_cfg='config/bert_muling.json'
+                --model_cfg='config/bert_base.json'
 
 2. **Evaluation**
 - Basically evaluation code, dump out results file. So, you can change dump option in [main.py](./main.py) There is two mode (real_time print, make tsv file)
 
         python main.py \
             --cfg='config/eval.json' \
-            --model_cfg='config/bert_muling.json'
+            --model_cfg='config/bert_base.json'
 
 
 ## Acknowledgement
