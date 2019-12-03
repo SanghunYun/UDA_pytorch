@@ -68,8 +68,8 @@ class CsvDataset(Dataset):
                             ori = proc(ori, d_type)
                             aug = proc(aug, d_type)
                         self.cnt += 1
-                        if self.cnt == 10:
-                            break
+                        # if self.cnt == 10:
+                            # break
                         data['ori'].append(ori)    # drop label_id
                         data['aug'].append(aug)    # drop label_id
                     ori_tensor = [torch.tensor(x, dtype=torch.long) for x in zip(*data['ori'])]
