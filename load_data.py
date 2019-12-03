@@ -45,20 +45,20 @@ class CsvDataset(Dataset):
 
                 # supervised dataset
                 if d_type == 'sup':
-                    if mode == 'eval':
-                        sentences = []
+                    # if mode == 'eval':
+                        # sentences = []
                     data = []
 
                     for instance in self.get_sup(lines):
-                        if mode == 'eval':
-                            sentences.append([instance[1]])
+                        # if mode == 'eval':
+                            # sentences.append([instance[1]])
                         for proc in pipeline:
                             instance = proc(instance, d_type)
                         data.append(instance)
 
                     self.tensors = [torch.tensor(x, dtype=torch.long) for x in zip(*data)]
-                    if mode == 'eval':
-                        self.tensors.append(sentences)
+                    # if mode == 'eval':
+                        # self.tensors.append(sentences)
 
                 # unsupervised dataset
                 elif d_type == 'unsup':

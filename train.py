@@ -106,7 +106,7 @@ class Trainer(object):
                                      'lr': self.optimizer.get_lr()[0]
                                     }, global_step)
             else:
-                logger.add_scalars('data/scalar_gropu',
+                logger.add_scalars('data/scalar_group',
                                     {'sup_loss': final_loss.item()}, global_step)
 
             if global_step % self.cfg.save_steps == 0:
@@ -124,11 +124,11 @@ class Trainer(object):
 
             if self.cfg.total_steps and self.cfg.total_steps < global_step:
                 print('The total steps have been reached')
-                print('Average Loss %5.3f' % loss_sum/(i+1))
+                print('Average Loss %5.3f' % (loss_sum/(i+1)))
                 if get_acc:
                     results = self.eval(get_acc, None, model)
                     total_accuracy = torch.cat(results).mean().item()
-                    logger.add_scalar('data/scalar_group', {'eval_acc' : total_accuracy}, global_step)
+                    logger.add_scalars('data/scalar_group', {'eval_acc' : total_accuracy}, global_step)
                     if max_acc[0] < total_accuracy:
                         max_acc = total_accuracy, global_step                
                     print('Accuracy :', total_accuracy)
