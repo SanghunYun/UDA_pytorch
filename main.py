@@ -122,7 +122,7 @@ def main(cfg, model_cfg):
 
                 unsup_loss is divied by number of unsup_loss_mask
                 it is different from the google UDA official
-                The offical unsup_loss is diviede by total
+                The official unsup_loss is divided by total
                 https://github.com/google-research/uda/blob/master/text/uda.py#L175
             """
             unsup_loss = torch.sum(unsup_criterion(aug_log_prob, ori_prob), dim=-1)

@@ -186,8 +186,8 @@ class Trainer(object):
         torch.save(self.model.state_dict(),
                         os.path.join(self.cfg.results_dir, 'save', 'model_steps_'+str(i)+'.pt'))
 
-    def repeat_dataloader(self, iteralbe):
+    def repeat_dataloader(self, iterable):
         """ repeat dataloader """
         while True:
-            for x in iteralbe:
+            for x in iterable:
                 yield x
